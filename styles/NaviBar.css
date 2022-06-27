@@ -1,0 +1,528 @@
+
+.main-header__wrapp{
+  position:fixed;
+  width:100%;
+  z-index:12;
+  left:0;
+  top: 0;
+  transition: .3s;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.head-margin{
+  padding-top: 95px;
+}
+.mainHeader{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  /* padding-top: 31px!important; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.header-tel{
+  margin-right: 30px;
+}
+.light-info-night .header-tel a{
+  color:#fff;
+}
+.header-tel a{
+  color:#000;
+  font-weight: 300;
+  text-decoration: none;
+}
+.social-board{
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 21px;
+}
+.navbar-brand{
+  display: flex;
+}
+.navbar-brand img{
+  width:250px;
+  height:auto;
+}
+.navbar-contacnt{
+    display: flex;
+  }
+  .navbar-contacnt__wrapp{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ic-night, .navbar-contacnt a{
+    cursor: pointer;
+  }
+  .navbar-contacnt div, .ic-night{
+    display: flex;
+    align-items: center;
+  }
+  .ic-night{
+    padding-left:20px;
+    transition: .3s;
+  }
+  .ic-night:hover{
+    transform: scale(1.1);
+  }
+  .nav-menu-day{
+    position: relative;
+  }
+
+  .nav-menu-day::before{
+    content:'';
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    filter: blur(10px);
+    z-index: -1;
+  }
+  .day .header-nav{
+    background-color:rgba(255, 255, 255, 0.027)
+  }
+  .nav-menu-day a{
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+ 
+  .top-menu__link{
+    color:#454545;
+    text-decoration: none!important;
+    text-transform:uppercase;
+    transition: .3s;
+  }
+  
+.mob-menu__content .nav-menu-day.active{
+  color:#fff;
+}
+  .top-menu__link.active{
+    text-decoration: none!important;
+    text-transform:uppercase;
+  }
+  .top-menu__link:hover .day,
+  .top-menu__link:focus .day,
+  span.top-menu__link .day,
+  .top-menu__link.active{
+    color:#000;
+    text-decoration: underline!important;
+    font-weight: 700;
+  }
+  .top-menu__link:hover .night,
+  .top-menu__link:focus .night,
+  span.top-menu__link .night,
+  .top-menu__link.nav-menu-night.active{
+    color:#fff;
+    text-decoration: underline!important;
+    font-weight: 700;
+  }
+  nav{
+    display: flex;
+  }
+  .header-social a{
+    transition: .3s;
+  }
+  .header-social a:hover{
+    transform: scale(1.1);
+  }
+  .header-social img,
+  .mob-menu__social-wrapp img{
+    width: 24px!important;
+    display: block!important;
+  }
+  /* nav a {
+    margin-left: 10px;
+  } */
+
+ /* mob-menu */
+
+.mob-menu{
+  height:100px;
+  width:100%;
+  position:relative;
+  z-index:10;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mob-nav__menu  .top-menu__link.active{
+  border-bottom: 5px solid #F2CD2E!important;
+  text-decoration: none!important;
+}
+.day .mob-nav__menu .top-menu__link{
+  border-bottom:1px solid #E1E1E1;
+}
+.night .mob-nav__menu .top-menu__link{
+  border-bottom:1px solid #000;
+}
+ .mob-nav__menu .top-menu__link{
+  padding-left: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom:1px solid #fff
+}
+ .mob__burger-btn{
+  width:30px;
+  height:20px;
+  margin-left: 20px;
+  position: relative;
+  cursor:pointer;
+ }
+ .mob__burger-btn span{
+  content:'';
+  position:absolute;
+  top:9px;
+  width:20px;
+   background: #000;
+   height:2px;
+}
+.mob__burger-btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  width:20px;
+   background: #000;
+   height:2px;
+}
+.mob__burger-btn:before{
+  content:'';
+  position:absolute;
+  bottom:0;
+  width:20px;
+   background: #000;
+   height:2px;
+}
+.night .mob-nav__menu {
+  background-color: #ffff!important;
+  overflow-y: scroll;
+  
+}
+.night .mob-nav__menu a{
+  color:#454545!important;
+}
+ .mob-nav__menu{
+   position: fixed;
+   height:100vh;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   background-color: #0C0E11;
+   color:#fff;
+   transform: translateX(-200%);
+   z-index: 500!important;
+   transition: .3s;
+ }
+ .mob-nav__menu.active{
+  transform: translateX(0);
+  padding: 10px 25px;
+  overflow-y: scroll;
+ }
+ .day .mob-menu-open__header-block{
+   border-bottom: 1px solid #fff;
+ }
+ .night .mob-menu-open__header-block{
+  border-bottom: 1px solid #000;
+}
+ .mob-nav__menu a{
+   color:#fff;
+
+ }
+ .top-menu__link{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 25px;
+ }
+ .mob-menu__conten{
+   width: 70%;
+   height: 100%;
+   
+ }
+ .backModalMenu.active.mob-menu{
+   display: none!important;
+ }
+.backModalMenu.active{
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+
+}
+.backModalMenu{
+  position: fixed;
+ 
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.mob-menu-open__header-block{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.logo-tab-white{
+  display: none;
+}
+.logo-tab-black.mob-fixed{
+  display: block;
+}
+.mob-main-white{
+  display: block;
+}
+.mob-main-black{
+  display: none;
+}
+.mob-fixed-main-white{
+  display: none;
+}
+.mob-fixed-main-black{
+  display: block;
+}
+
+
+
+.mob-menu-open__logo-block{
+  display: flex;
+  margin-bottom: 10px;
+}
+.night .mob-menu__tel a{
+  color:#000
+}
+.mob-menu__tel a{
+  position: relative;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.day .mob-menu__tel a::before{
+  content:'';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image:url(/menu-phone-day.svg);
+  left: -31px;
+  top: 0px;
+}
+
+.night .mob-menu__tel  a::before{
+  content:'';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image:url(/menu-phone-night.svg);
+  left: -30px;
+  top: 0px;
+}
+.mob-menu__tel{
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+.mob-menu-open__header-block .ic-night img{
+  color:#fff;
+  
+}
+.mob-nav__close{
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+.mob-nav__close img{
+  width: 15px;
+  height: 15px;
+}
+.mob-menu{
+  display: none;
+}
+.header-state-fixed .mainHeader{
+  padding-top: 20px!important;
+  transition: .3s;
+}
+.header-state-fixed{
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: ease 1s;
+  background-color:#fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+.header-state-fixed .navbar-contacnt__wrapp{
+  margin-bottom: 0;
+}
+.header-state-fixed-night{
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.15);
+  background-color:#1f2937;
+}
+.header-night {
+  /* background-color:#1f2937; */
+  color:#ffff;
+} 
+.mob-menu__footer{
+  margin-top: 50px;
+}
+.mob-menu__social-wrapp{
+  display: flex;
+}
+.mob-menu__social-wrapp img{
+  width: auto;
+  height: auto;
+}
+.mob-menu__social-wrapp .social-board{
+  font-size: 17px;
+}
+.social-board.night{
+  color:#454545!important;
+}
+.mob-menu__contacts{
+  margin-top: 10px;
+  font-size: 12px;
+}
+.mob-menu__contacts a{
+  text-decoration: none;
+}
+.mob-menu__contacts div{
+  margin-top: 10px;
+}
+.mob-menu__contacts.night,
+.mob-menu__polit a.night{
+  color:#454545;
+}
+
+.mob-menu__polit{
+  margin-top: 20px;
+}
+.mob-menu__polit a{
+  text-decoration: none!important;
+}
+.mob-menu__polit.night{
+  color:#454545!important;
+}
+.mob-menu__polit.day{
+  color:#fff;
+}
+.mob-menu__polit div{
+  font-size: 7px;
+  margin-bottom: 5px!important;
+}
+@media (max-width: 1400px){
+    .top-menu__link {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 12px;
+  }
+}
+@media (max-width: 1200px){
+  .mainHeader{
+    display: none!important;
+  }
+  .ic-night{
+    padding-left:10px;
+    transition: .3s;
+  }
+  .head-margin{
+    padding-top: 70px;
+  }
+  .navbar-brand img{
+    width:150px;
+  }
+  .mob-menu{
+    display: flex;
+  }
+  .mob-nav__menu{
+    width: 70%;
+  }
+  .nav-menu-day{
+    
+  }
+  /* .main-header__wrapp{
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+  .mob-menu{
+    height: 70px;
+  }
+  .header-state-fixed .mob-menu{
+    height: 60px;
+  }
+  .nav-menu-day::before{
+    display: none;
+  }
+}
+
+@media (max-width: 787px){
+  .mob-nav__menu{
+    width: 70%;
+  }
+  .main-header__wrapp{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 450px){
+
+  .mob-nav__menu{
+    width: 100%;
+  }
+  .header-tel img{
+    min-width: 30px;
+    width: 30px;
+  }
+  .catalog-Slider .slick-dots li {
+    width: 24px;
+  }
+  .mob-menu__tel a{
+    font-size: 14px;
+  }
+  .mob-nav__menu .top-menu__link{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .mob-menu__footer {
+    margin-top: 20px;
+}
+
+}
+
+@media (max-width: 365px){
+  .header-tel img {
+    min-width: 27px;
+    width: 27px;
+  }
+
+}
+@media (max-width: 355px){
+  .mob-menu__contacts div {
+    margin-top: 3px;
+  }
+  .mob-menu__polit {
+    margin-top: 4px;
+  }
+  .mob-nav__menu .top-menu__link {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+
+ #tv_player a[href*="baskino."][target="_blank"], #vkMsg, .advblock, .advertblock, .ammblock, .b-banner, .b-media-banner, .pulse-widget, [href*="://redir.wargaming.net/"], [href*="media.hubfiles.gdn"], a[href*="&utm_medium=cpa"][target="_blank"], a[href*=".converteam.online"], a[href*=".refocus.ru"][target="_blank"], a[href*=".yvok.ru"], a[href*="//admag.pro/"], a[href*="//mobiads.ru/"], a[href*="//ukrmedia.center/"], a[href*="/advtise.net"], a[href*="/bodyclick.net"], a[href*="/hit.all-in-one.pp.ua/search?"], a[href*="/luckproducti.ru"], a[href*="/maniya.info"], a[href*="/relap.io/adv/"], a[href*="/rikkobr.com"], a[href*="/skiles.link"], a[href*="/starinform.ru"], a[href*="/traforet.com"], a[href*="101xp.com/?utm_source=ad"], a[href*="1xwgn.xyz"], a[href*="2di.site"], a[href*="://clickio.com/"], a[href*="://gdz-ru.work/"], a[href*="://mediasyndicate.ru"][href*="banner"], a[href*="://mt-pbs.te.ua"][target="_blank"] > img, a[href*="://rotagmbetdog.xyz/"], a[href*="://smi.biz.ua"], a[href*="://smi.expert/"], a[href*="://smi.today/"], a[href*="://winline.ru"], a[href*="abs-cdn.org"], a[href*="actionteaser.ru"], a[href*="adbid.biz"], a[href*="adsmedia-provider.com"], a[href*="advclicks.net"], a[href*="advert-content.com"], a[href*="aff-ads.com"], a[href*="autochetki.ru"] img, a[href*="autoteaser.net"], a[href*="bigleads.ru"], a[href*="binomo.com/promo"] > img, a[href*="bromigo.pw"], a[href*="catcut.net"], a[href*="cpagette.com"], a[href*="cpagetti.com"], a[href*="cpagettio.com"], a[href*="cpaggetti.com"], a[href*="cpaggetti.ru"], a[href*="cpamatica.com"], a[href*="direct"][href*="advert.ru"], a[href*="download-center.club"], a[href*="globalteaser.ru"], a[href*="incrypted.net"][href*="banner"][target="_blank"], a[href*="installoffer.net"], a[href*="leadadvert.ru"], a[href*="lenkmio.com"][target="_blank"], a[href*="lentainform.com/pnews/"], a[href*="marathonmirrorbet.com"], a[href*="medicinetizer.ru"], a[href*="news-network.ru"][target="_blank"], a[href*="newsnetwork.ru"][target="_blank"], a[href*="novostimira.biz"], a[href*="omnicpa.ru"], a[href*="onetwoaffiliates.com"], a[href*="people-group.su"], a[href*="promoheads.com"], a[href*="reals-gooods.ru"], a[href*="recreativ.ru"], a[href*="redtram.com"], a[href*="rootmedia.cc"], a[href*="runetki.com"], a[href*="salesdoubler.com.ua"], a[href*="teasermoney.com"], a[href*="tizerclick.com"], a[href*="tovar.helloprice.ru/click/"], a[href*="trafmag.com"], a[href*="true-gooods.ru"], a[href*="universallnk.com"], a[href*="www.nnn.ru"], a[href*="wwwapteka.info"], a[href*="zen.yandex."] > img:not([src*="gstatic.com"]):not([onload*="google"]):not([jsaction]), a[href^="http://amigo-free.website/"], a[href^="http://amigo-source.website/"], a[href^="http://amigoman.pw/"], a[href^="http://amigone.pw/"], a[href^="https://bither.one/"], a[onclick*="media-rotate.com"], a[onclick*="reklamka.ru.net"], div[class*="notifier_baloon_"], div[id$="notifiers_wrap"], div[id^="vk_ads_"], form[action^="//12go.asia/"][target="_blank"] > .powered, iframe[src*="//sass.com.ua/"], iframe[src*="/adnetpartner.com"], iframe[src*="/uniontraff.com"], iframe[src*="://match-center.playmaker24.ru/"], iframe[src*="bongacams.com"], iframe[src*="directadvert"], iframe[src*="fncdev.in.ua/"], iframe[src*="giraff.io/"], iframe[src*="steambets.net/"], iframe[src^="https://www.favorit.com.ua/"], iframe[width="240"][height="400"], noindex a[href^="http://www.westmister.eu/collection/"], noindex a[href^="http://www.westmister.eu/collection/"] ~ *, a[href*="://smi2.ru/newdata/news?ad="], a[href*="://smi2.ru/newdata/news?ad="] *, #adv, #advblock, .madv, .td-a-rec, div[class*="td-a-rec-id-"], div[id^="smi_teaser_"], img[width="468"][height="60"], img[width="728"][height="90"], #ads_iframe, div[id^="yandex_rtb"], #AD_CONTROL_28, #AD_Top, #AdContainer, #AdHeader, #AdSense1, #HeroAd, #ab_adblock, #ad-banner, #ad-buttons, #ad-lead, #ad-target, #adBanner1, #adLink1, #ad_global_above_footer, #ad_header, #ad_top, #adcontent, #ads-container, #ads1, #ads2, #ads3, #ads4, #ads_top, #adsense2, #adstop, #adv-title, #adv_config, #adv_right, #advert-1, #adverts, #bottomAd, #centerads, #contentAd, #content_ads, #feed_links_ad_container, #footer-ads, #header-ads, #homead, #inner-advert-row, #reklama, #right_ad, #sidebar-ads, #sponsorText, #sponsor_ad, #top-ad, #topAdvert, #video-adv, .AdSense, .TextAd, .ad-banner, .ad-block, .ad-cluster, .ad-code, .ad-flag, .ad-img, .ad-item, .ad-list-item, .ad-placement, .ad-spacer, .ad-text, .ad-title, .adBlock, .adContent, .adSense, .adWrapper, .ad_content, .ad_header, .ad_image, .ad_img, .ad_item, .ad_large, .ad_small, .ad_text, .adinfo, .ads-bg, .ads-box, .ads-content, .ads-footer, .ads-holder, .ads-iframe, .ads-image, .ads-list, .ads1, .adsBlock, .adsBox, .ads_2, .ads_3, .ads_banner, .ads_block, .ads_item, .adsbygoogle, .adsense-header, .adsinfo, .adslot_1, .adslot_300, .adtable, .adtxt, .adv-4, .adv-banner, .adv-block, .adv-header, .adv-list, .adv-right, .adv-text, .adv_left, .adv_right, .adv_title, .adv_top, .advert-block, .advert-card, .advert2, .advertising-content, .adverts, .advt, .advtext, .adwolf-holder, .b-adv, .b-advert, .banner-adv, .big-ads, .container--ads, .content_ads, .context-ads, .forumAd, .google_ad, .headerad, .home-ads, .imageAds, .ipsAd, .item-ads, .lastads, .mom-ad, .n_ad, .node-ad, .pads2, .page-ads, .page-advert, .panel-ad, .patronad, .pm-ads-banner, .quads-location, .reklam, .reklama, .sb-ad, .section-adv, .sidebar-ad-c, .single-ad, .sponsor_block, .td-header-ad-wrap, .textad, .topAD, .vertical-ads, .view-ads, .vl-advertisment, .vl-header-ads, .wide-ad, .widget_viral_advertisement, .wrapad, a[href^="http://mgid.com/"], div[id^="adfox_"], div[id^="advads-"], [id*="ScriptRoot"], #ad-carousel, #ad-header, #ad-rotator, #ad-top, #ad-top-banner-placeholder, #ad-wrapper, #adHeader, #ad_space, #ad_thread_first_post_content, #adblock, #adcontainer, #adcontainer1, #ads-col, #ads-wrapper, #adsContainer, #adspace, #adtop, #advertise, #article_ad, #banner-ad, #body_ad, #google-ads, #gwd-ad, #headerAd, #header_ad, #msad, #prerollAd, #related_ads, #right_ads, #side-ad, #topbannerad, .Adsense, .ProductAd, .ad-active, .ad-area, .ad-box, .ad-button, .ad-center, .ad-content, .ad-cover, .ad-icon, .ad-label, .ad-links, .ad-root, .ad-sidebar, .ad-source, .ad-wrapper, .ad01, .ad728x90, .adActive, .adChoicesLogo, .adHolder, .adLink, .adMiddle, .adResult, .adText, .ad_block, .ad_body, .ad_bottom, .ad_caption, .ad_container, .ad_global_header, .ad_spot, .adbanner, .adbar, .adcenter, .adlink, .adlist, .adrect, .adright, .ads-area, .ads-banner, .ads-header, .ads-inline, .ads-link, .ads-title, .ads-top, .ads.widget, .adsList, .ads_right, .ads_wrapper, .adsbottombox, .adscontainer, .adsense_wrapper, .adshome, .adsleft, .adslot, .adtag, .adthrive, .adv-box, .advBox, .advert-container, .advertSlider, .advert_list, .advertisement-block, .advertisement__leaderboard, .advertiser, .advertisment, .advertorial, .adverttext, .adwords, .after-post-ad, .article-advert, .article_ad, .atf-wrapper, .banner-ad-container, .bannerad, .block-ad, .block-sponsor, .bottom_ad_block, .box-radvert, .boxAds, .category-ad:not(html):not(body), .category-ads:not(html):not(body), .category-advertorial, .column-ad, .content-ad, .contentAds, .custom-ad, .dfp-ad-unit, .dfp-banner, .dfp-tag-wrapper, .display_ad, .fixed_ad, .footer-ad, .frn_contAdHead, .gallery-ad, .greyAd, .has-ad, .header-ad-row, .header_ad, .home-ad, .img_ad, .is-sponsored, .large-advert, .large-right-ad, .logo-ad, .middlead, .module_ad, .nativead, .overlay-ads, .page_ad, .plain-ad, .product-ad, .promoAd, .serversidenativead, .side-ad, .sidebar-ads, .smallads, .sp-ad, .sponsored-post, .sponsoredItem, .takeover-ad, .textads, .topAd, .topads, .video-ads, .videos-ad, [href^="http://globsads.com/"], [href^="https://mypillow.com/"] > img, [href^="https://www.mypillow.com/"] > img, [href^="https://www.reimageplus.com/"], [id^="div-gpt-ad"], [id^="google_ads_iframe"], a[href^="https://ad.doubleclick.net/"], a[href^="https://badoinkvr.com/"], a[href^="https://natour.naughtyamerica.com/track/"], a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], div[data-ad-targeting], div[data-native_ad], div[id^="dfp-ad-"], div[id^="div-gpt-"], div[id^="yandex_ad"], .ad_box, .ad_title, #adsensewide, .advert_area, .region-ad-top, a[href^="http://pubads.g.doubleclick.net/"], div[data-google-query-id], .ob-strip-layout, a[href^="https://paid.outbrain.com/network/redir?"], .ob-p.ob-dynamic-rec-container, .a-ad--leaderboard, a-ad, [name^="google_ads_iframe"], a[href^="https://googleads.g.doubleclick.net/pcs/click"], a[href^="https://pubads.g.doubleclick.net/"], .ad-microsites, .a-ad, #adunit, .ad-1, a[href^="https://www.googleadservices.com/pagead/aclk?"], .top-topics__ad, .adunit, .adunit-middle, .ads-label, .chitikaAdBlock, #sponsored_link_bottom, #google_ads, #sponsored_link, #ad-frame, .sponsorshipbox, a[href^="http://ad.doubleclick.net/"], a[href^="http://bs.serving-sys.com/"], #ad_main, #ad_main_top, #liste_top_ads_wrapper, .item-container-ad, a[href^="http://paid.outbrain.com/network/redir?"], a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], a[data-redirect^="http://paid.outbrain.com/network/redir?"], a[data-redirect^="https://paid.outbrain.com/network/redir?"], a[href^="https://bs.serving-sys.com"], #adblock1, #adblock2, .content-list__ad-label, .article-view__footer-ad, .adbox-wrapper, .adbox-rectangle, .block1--ads, .postbit-ad, .google_ads, #bsap_aplink, .bsa_it_ad, #buysellads, .adsense_single, .ad_boxright1, .bxad, .ad_adInfo, .ad_halfpage, .ad_default, #extraAdsBlock, #header_ads, #google-adsense, .adLabel, #ad-container, #sponsored-links, .bullet-sponsored-links-gray, .ad-link, #advertorial, .ad-head, .google_ads_v3, #contentad-adsense-homepage-1, #contentad-adsense-homepage-2, #contentad-topbanner-1, #adbar, .ad_unit, .widget-ads, #ads_box, a[data-obtrack^="http://paid.outbrain.com/network/redir?"], a[data-oburl^="http://paid.outbrain.com/network/redir?"], a[data-oburl^="https://paid.outbrain.com/network/redir?"], a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"], a[data-url^="http://paid.outbrain.com/network/redir?"], a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, .js-outbrain-container, a[href^="https://ad.atdmt.com/"], a[href^="https://www.clicktraceclick.com/"], .ob-hover, .outbrain-ad-units, .below-next-nativeads, .ad-tag, .ad-sticky-container, .adframe, #adBottom, #js-outbrain-rightrail-ads-module, .Cheat__outbrain, .ads_container, .c-ad, .cazAd, .desktop-ad, .ezoic-ad, .googleAds, .js-ad-static, .nav-ad, .ob_ads_header, .ob_container .item-container-obpd, .ob_dual_right > .ob_ads_header ~ .odb_div, .onf-ad, .w_ad, .widget_newscorpau_ads, .outbrain-widget, .single__outbrain, .wpInsertInPostAd, .sponsors-box, #adUnit, .advertContainer, .ad-desktop, #halfPageAd, .newsad, .adv-border, .trc-content-sponsoredUB, .trc-content-sponsored, .trc_rbox_div .syndicatedItem, .trc_rbox_div .syndicatedItemUB, .trc_rbox .syndicatedItem, .trc_rbox_border_elm .syndicatedItem, .trc_related_container div[data-item-syndicated="true"], a[href^="https://tracking.truthfinder.com/?a="], #taboola-below-article-thumbnails, .ad--sponsor-content, #adDiv, .adloaded, .iAdserver, .g1-advertisement, .vuukle-ads, .full-width-ad, #ad-bottom, #ad-unit, #ad_zone1, #adswidget2-quick-adsense-reloaded-2, #adver2, #adver5, #advert-placeholder-post-content-image-1, #article-ad, #article-footer-sponsors, #bottom-ad, #bottom-ads, #btmsponsoredcontent, #footer-ad, #footer_ad, #mvp-post-bot-ad, #quads-ad2, #quads-ad2_widget, #quads-ad4, #ra-taboola-bottom, #sponsored_links, #taboola-ad, #taboola-below, #taboola-below-article-thumbnails-3rd, #taboola-content, #taboola-right-rail-thumbnails-1st, #taboola-right-rail, #taboola_related, .AD_area, .AdBorder, .WP_Widget_Ad_manager, .ad-300x250, .ad-bottom, .ad-codes, .ad-custom-size, .ad-footer, .ad-google, .ad-inner, .ad-inserter, .ad-inserter-widget, .ad-location, .ad-panel, .tncls_ad_250, .ad-row, .ad-s-rendered, .ad-slot, .ad-slot-sidebar-b, .ad-unit, .ad-widget, .ad-wrap, .adSpace, .ad_space, .adcode, .adinjwidget, .adrotate_widgets, .ads-bottom, .ads-large, .ads-post, .ads-widget, .adspace, .adspace-widget, .adv-container, .advertisementBanner, .article-ad-bottom, .banner_ad, .bannervcms, .bean-advertisment, .betteradscontainer, .block-ads, .bottom_ad, .bottom_ads, .bottomad, .bottomads, .box-recommend-ad, .box-taboola-content, .bunyad-ad, .cmAd, .desktop-ads, .desktop_ad, .div_adv300, .easyAdsBox, .ezAdsense, .for-taboola, .header-ad, .herald-ad, .js-ad, .jtn-widget-adv, .mmads, .module-ads, .mvp-widget-ad, .mvp_ad_widget, .pb-f-ads-taboola-article-well, .pb-f-ads-taboola-right-rail-alt, .pm-ad-zone, .post-ad, .promoted-outbrain, .quads-ad2, .quads-ad3_widget, .quads-ad4, .reklam2, .side-ads, .single_ad, .sponsored-content, .sponsored-headlines, .sponsored-link, .sponsored-links, .sponsored_ad, .sr-in-feed-ads, .sticky-ad-container, .story-ad-container, .strawberry-ads, .taboola-ad, .taboola-inbetweener, .taboola-left-rail-wrapper, .taboola-unit, .taboola-widget, .taboola_blk, .td-a-rec-id-custom_ad_1, .td-a-rec-id-custom_ad_2, .td-a-rec-id-custom_ad_3, .td-a-rec-id-custom_ad_4, .trb_taboola, .widget-ad, .widget_advert, .widget_better-ads, .widget_cpxadvert_widgets, .widget_taboola, .wpInsertAdWidget, div[id^="ad_script_"], div[id^="advads_"], .custom-ads, .section-ads, .ad_area, .ads-wrapper, .native-ad, .advads-widget, .mvp-ad-label, .ads_code, .grid__module-sizer_name_taboola, .card-ad, #taboola-mid-article-thumbnails, .ad_center, .pb-f-ads-taboola, .googlead, .adLoaded, .taboola-placement, .td-a-ad, .penci-google-adsense, .penci-google-adsense-2, .taboolaArticle, .native_ad, #taboola-below-article-thumbnails-express, #component-taboola-below-homepage-feed, #taboola-main-container, .ad_cl, .van_taboola, .jeg_ad, .ad-space, .taboola_lhs, .ads_tb-c, .taboola-general, .adace-slot-wrapper, .adace-slot, .taboola-placeholder, .widget_adace_ads_widget, .ad-banner-container, .banner-ad, #ad_website_top, #googleadsense, #center-ad, .ligatus, .openx, #p-googleadsense, .adwrap-widget, .adslot_2, .ads_div, .ad300x250, .ad728, .ads--sidebar, .ads--top, .plistaList > .plista_widget_underArticle_item[data-type="pet"], a[href^="http://click.plista.com/pets"], a[href^="https://click.plista.com/pets"], .plistaList > .itemLinkPET, .ads_google, .Ad-label, .advads_widget, .footer-leaderboard-ad, .mediumRectangleAd, a[href^="http://adserver.adtech.de/"], #AdBar, #top-banner-ad, #header-ad, #single-ad, .ad-leaderboard, .ad-med-rect, .bigbox-ad, .ad-top, .contentAd, .adunitContainer, .adBox, .ad_300, #ad-rectangle, .content-ads, #advertising_728, .adplace, .ad_note, .wdt_ads, .ad_leaderboard_atf, #rightAd300x250, #rightAd300x250Lower, #topAd728x90, .internal_ad, #rightAds, .sticky-ad, .header-ad-wrapper, #topAd, .bomAd, #ad-leaderboard, .horizontalAdText, .widead, .ad-atf, .sidebar-advertisement, .sidebar-ad, .pagefair-acceptable, .static-ad, .ad-stack, #ad-top-wrap, .ad-horizontal, .lbc-ad, #ad-horizontal, .ad300x600, .s_ad_160x600, .s_ad_300x250, .widget-gpt2-ami-ads, #gpt2_ads_widget-6, .verticalAdText, .ad-sky, .ad_placement, .bottom-ad-container, .sidebar-ad-slot, .adv-slide-block-wrapper, #contentad-top-adsense-1, #contentad-story-bottom-1, .widget_ad_widget, #ad-secondary-sidebar-1, #admputop, #adslider, .hp_adv300x250, .hp_advP1, .publicidade, .ad-panorama, .atf-ad-medRect, #adl_300x250, .dcmads, #banner728, #banner600, #carbonads-container, .carbon_ads, .carbon-ad, #googleAd, .ad-zone, .lx_ad_title, .adspot, .ads160-600, .ad-cell, .ads160_600-widget, .advertCont, #ads-header, .rc-cta[data-target], .rc-item-wrapper, #rc-row-container, div[id^="rc-widget-"], .responsive-ad, .ad-spot, .ad_wrapper, .rc-sponsored, #AdSense2, .inline-ad, .mobile-ad, .reklama1, .ads_header, .ht_ad_widget, #ad-728, #bottomad, #BannerAd, .ads_300, #source-ad-native-sticky-wrapper, .right-ad, .dianomi-ad, #advertiserReports, .rightads, #adContent, #adTop, .ad-160-600, .ad-300-250, .ad-728-90, .ad-disclaimer, a[href^="https://adclick.g.doubleclick.net/"], #bbccom_mpu, .mpu-ad, .bbccom_advert, .oio-banner-zone, .sidebar_ads, .sponsor-block, .sponsor-logo, .advertisement-text, .adWrap, .first-ad, .sidebar_ad_1, .sidebar_ad_2, .sidebar_ad_3, #advert-right, ._ap_adrecover_ad, .advertise-here, #frnAdSky, #adslot300x250ATF, ._ap_apex_ad, .td-adspot-title, div[data-adunit], .iconads, .pubDesk, iframe[src^="https://tpc.googlesyndication.com/"], .bottom-main-adsense, .adslot_3, .advert1, .advert_top, .ad_468x60, .ad_banner, .ad-unit-label, iframe[id^="google_ads_frame"], .WikiaTopAds, #ad-horizontal-header, #ad-sidebar1, #ad-sidebar2, #adbottom, #adbox, #adbox2, #adbox_right, #adleft, #adsRight, #ads_header, #b5ad300, #bottomBannerAd, #cmn_ad_tag_head, #crt-adblock-a, #crt-adblock-b, #div-insticator-ad-1, #div-insticator-ad-2, #footerad, #footeradvert, #header-ad-container, #headerad, #insticator-container, #leftrail_dynamic_ad_wrapper, #topad, .ADBox, .ADbox, .Ad-leaderboard, .AdsRec, .Ads_4, .RightAdWrapper, .ad-160, .ad-160-above, .ad-2, .ad-3, .ad-728x90, .ad-Leaderboard, .ad-atf-medRect, .ad-banner-top, .ad-below, .ad-card, .ad-centered, .ad-container--featured_videos, .ad-header, .ad-holder, .ad-one, .ad-placeholder, .ad-size-leaderboard, .ad-size-medium-rectangle-flex, .ad-slot--top-banner-ad, .ad-slot-container, .ad-square, .ad-sticky, .ipc-advert, .ipc-advert-class, .ad-unit-wrapper, .ad300, .adRight, .ad_300_250, .ad_300_600, .ad_728_90, .ad_footer, .ad_placeholder, .adbottom, .adops, .ads-in-content, .adspacer, .adspot1, .adswidget, .adtop, .advert-box, .advert-content, .afw_ad, .banner160x600, .bottom-ad, .bottomBannerAd, .breaker-ad, .cm-ad, .cube-ad, .dfp-panel, .footer-advert, .googleAd, .gpt-ad, .home-top-right-ads, .horizontal_ad, .imuBox, .in-content-ad, .js-ad-hover, .leaderboard-ad, .leaderboard-ad-container, .leaderboard-ad-module, .leaderboard_ad, .leftAd, .m-ad{
+    display: block!important;
+  }

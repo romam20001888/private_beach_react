@@ -1,0 +1,77 @@
+
+.main-section-night{
+    background: #111827;
+    transition: ease 1s;
+    color:#fff;
+  }
+.main-section-night p,
+.main-section-night h6,
+.main-section-night h4,
+.main-section-night h5,
+.KupibasTitleh2-home-night{
+      color:#fff;
+  }
+  .main-section-night .contact-polit{
+      color:#fff;
+  }
+  .main-section-night .contact-polit a{
+    color:#fff;
+  }
+  .KupibasTitleh2-home-night h3{
+    color:#fff;
+  }
+  .main-section-night .main-yelow__span{
+      color:#F2CD2E;
+  }
+.header-state-fixed-night{
+    background: #0c0e11;
+    transition: ease 1s;
+    color:#fff;
+  }
+
+  .light-info-night a{
+      color:#fff;
+  }
+
+  .KupibasTitleh2-night,.KupibasTitleh2-night p{
+      color:#fff!important;
+  }
+
+  .night, 
+  .night a,
+  .night p,
+  .night h1,
+  .night h2,
+  .night h3,
+  .night h4,
+  .night h5,
+  .night h6{
+      color:#fff;
+  }
+
+
+
+  .header-night .mob__burger-btn span,
+  .header-night .mob__burger-btn::before,
+  .header-night .mob__burger-btn::after{
+      background:#fff;
+  }
+
+  .night .form-floating > label{
+    color:#fff!important;
+  }
+  .night .modal-body .form-floating > label{
+    color:#000!important;
+  }
+  .night.header-flex__title-h1 {
+
+    white-space: nowrap;
+    color:var(#fff)
+  }
+  .night .header-flex__title-h1 span{
+    display: block;
+    color:var(#fff)
+  }
+  .modal-cont__wrapp .contact-form-txt h3, .modal-cont__wrapp .contact-form-txt {
+    color: #000;
+  }

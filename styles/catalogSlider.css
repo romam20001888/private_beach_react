@@ -1,0 +1,127 @@
+/* slider */
+.catalog-Slider ol, .catalog-Sliderul {
+  padding-left: 0!important;
+  margin-bottom: 0!important;
+}
+.slick-track{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .slick-slide {
+    padding: 60px;
+
+  } */
+  .slick-list{
+    overflow: hidden;
+  }
+  .catalog-Slider{
+    margin-top: 10px;
+  }
+  .catalog-slider__ithem{
+    width: 700px;
+    overflow: hidden;
+    transition: .9s;
+    cursor: pointer;
+  }
+  .catalog-slider__ithem img{
+    width: 100%;
+    object-fit: cover;
+  }
+  /* .slick-center {
+    opacity: 1;
+    transition: .9s;
+  } */
+  /* .slick-center .catalog-slider__ithem{
+    transform: scale(1.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  } */
+  .catalog-Slider{
+    overflow: hidden;
+  }
+  .catalog-Slider{
+    position: relative;
+
+  }
+  .catalog-Slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+  }
+  .catalog-Slider .slick-prev{
+    left: 0;
+  }
+  .catalog-Slider .slick-next{
+    right: 0;
+  }
+  .catalog-Slider .slick-dots{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    flex-wrap: wrap;
+  
+  }
+  .catalog-Slider .slick-dots li{
+    list-style: none;
+  }
+  .catalog-Slider .slick-dots button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color:#5555!important;
+    background: #373737;
+    border: 1px solid#373737;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .catalog-Slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border-radius: 50%;
+    align-items: center;
+    border: 1px solid #373737;
+  }
+
+  /* Night */
+  .night .slick-dots li.slick-active button{
+    background:transparent;
+    border: 1px solid #fff;
+  }
+  .night .slick-dots button{
+    border: 1px solid #fff;
+    background: #fff;
+  }
+
+  
+  /* END slider */
+
+  @media (max-width: 991px){
+    .catalog-Slider .slick-dots button{
+      width: 14px;
+      height: 14px;
+    }
+}
+@media (max-width: 575px){
+  .gallery-tab__slide{
+    width: 100%!important;
+    /* padding-right: 5px!important; */
+  }
+  .gallery-tab__img{
+    width: 100%!important;
+    /* padding-left: 5px!important; */
+  }
+  .slick-prev,
+  .slick-next{
+    display: none;
+  }
+  .catalog-Slider .slick-dots li{
+    width: 27px;
+  }
+  .catalog-Slider .slick-dots{
+    flex-wrap: wrap;
+  }
+  .catalog-Slider .slick-dots button{
+    width: 14px;
+    height: 14px;
+  }
+}
